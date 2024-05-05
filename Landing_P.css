@@ -1,0 +1,140 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "poppins", sans-serif;
+}
+.main_box {
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one i {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px  rgba(255, 255, 255, 0.1);
+    height: 60px;
+}
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar_menu .btn_two i {
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+.sidebar_menu .menu i,
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .social_media {
+    position: absolute;
+    left: 25%;
+    bottom: 80px;
+}
+.sidebar_menu .social_media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+#check {
+    display: none;
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px  rgba(255, 255, 255, 0.1);
+}
+.btn_one i:hover {
+    font-size: 40px;
+}
+.btn_two i:hover {
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+#check:checked ~ .btn_one i {
+    opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+
+/*  */
+.navigation {
+    height: 60px;
+    width: 100%;
+    background-color:  rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.name a{
+    width: 30%;
+    line-height: 2.3;
+    padding-left: 80px;
+    font-size: 25px ;
+    font-weight: 500;
+}
+.navigation ul {
+    float: right;    
+}
+.navigation ul li {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-right: 50px;
+    margin-right: 20px;
+    line-height: 3.5;
+    font-size: 17px;
+    cursor: pointer;
+}
+.name a:hover {
+    text-shadow:2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+.navigation ul li:hover {
+    text-shadow:2px 2px 5px rgba(255, 255, 255, 0.5);
+    
+}
